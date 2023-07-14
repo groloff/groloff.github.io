@@ -1,0 +1,151 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+#hero-section {
+    background-image: url('img/hero-img-oficina2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content {
+    background-image: url('img/fondo-angulo-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -500px;
+}
+#welcome-section {
+    background-image: url('img/fondo-angulo-sections.png');
+    background-repeat: no-repeat;
+    
+    background-position: right 400px;
+}
+#services-section {
+    background-image: url('img/fondo-angulo-sections-left.png');
+    background-repeat: no-repeat;
+    background-position: -300px 920px;
+}
+#contact-section {
+    background-image: url('img/fondo-angulo-sections-left.png');
+    background-repeat: no-repeat;
+    background-position: -580px 220px;
+}
+footer {
+    background-image: url('img/fondo-angulo-sections-left.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: auto;
+}
+.service-card {
+    background-image: url('img/img-service-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom,#002f4b00,#0f151f);
+        opacity: .8; 
+      }
+}
+p {
+    margin-bottom: 20px !important;
+}
+.section-title::before, .footer-text::before {
+    width: 80px;
+    height: 6px;
+    display: block;
+    background-color: #BA050F;
+    content: '';
+}
+
+@media screen and (min-width: 768px) {
+    .img-right {
+        margin-right: -100px;
+    }
+}
+
+
+@media (min-width: 1536px) {
+
+.container {
+    max-width: 1280px !important;
+}
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .hero-content {
+        background-image: url('img/fondo-angulo-hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -100px;
+    }
+    #hero-section {
+        background-position-x: -150px;
+    }
+    #welcome-section {
+        background-image: url('img/fondo-angulo-sections.png');
+        background-repeat: no-repeat;
+        
+        background-position: left 1100px;
+    }
+    
+}
+@media (min-width: 320px) {
+.container {
+    max-width: 100%;
+}
+}
+
+
+/* RESPONSIVE MENU */
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+  }
+  .topnav-wrapper {
+    display: none;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 767px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav {
+        margin-top: 5px !important;
+    }
+    
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 767px) {
+    
+    .topnav.responsive a.icon {
+      
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .topnav.responsive .topnav-wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        padding: 20px 80px;
+        background-color: rgba(255, 255, 255, 0.90);
+        backdrop-filter: blur(2px);
+        display: block;
+    }
+  }
