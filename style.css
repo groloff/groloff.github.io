@@ -23,17 +23,8 @@
     background-repeat: no-repeat;
     background-position: -300px 920px;
 }
-#contact-section {
-    background-image: url('img/fondo-angulo-sections-left.png');
-    background-repeat: no-repeat;
-    background-position: -580px 220px;
-}
-footer {
-    background-image: url('img/fondo-angulo-sections-left.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: auto;
-}
+
+
 .service-card {
     background-image: url('img/img-service-1.png');
     background-repeat: no-repeat;
@@ -64,6 +55,16 @@ p {
 @media screen and (min-width: 768px) {
     .img-right {
         margin-right: -100px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        background-image: url('img/fondo-angulo-sections-left.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: auto;
     }
 }
 
